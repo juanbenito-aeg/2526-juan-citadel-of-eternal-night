@@ -14,7 +14,7 @@
       },
       {
         "name": "Ruins of Eldoria",
-        "type": "Ancient Ruins",
+        "type": "Ruins",
         "distance": 7.8
       },
       {
@@ -24,7 +24,7 @@
       },
       {
         "name": "Rotten Tower",
-        "type": "Ancient Ruins",
+        "type": "Ruins",
         "distance": 5.3
       }
     ]
