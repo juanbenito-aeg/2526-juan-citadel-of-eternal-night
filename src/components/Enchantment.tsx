@@ -6,6 +6,13 @@ function Enchantment({ name, level }: EnchantmentProps) {
       <p>
         {name} (Level {level})
       </p>
+
+      <div className="h-2.5 w-full rounded-full bg-gray-700">
+        <div
+          className="h-2.5 rounded-full bg-blue-600"
+          style={{ width: `${level * 10}%` }}
+        ></div>
+      </div>
     </li>
   );
 }
