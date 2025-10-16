@@ -46,7 +46,12 @@ function Main({ citadelData, activeSection }: MainProps) {
     }
 
     case Section.HISTORY: {
-      content = <History />;
+      content = (
+        <History
+          founded={citadelData.history.founded}
+          majorEvents={citadelData.history.majorEvents}
+        />
+      );
       break;
     }
   }

@@ -15,4 +15,4 @@ interface MajorEvent {
   description: string;
 }
 
-export default History;
+export type { History };
