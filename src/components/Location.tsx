@@ -1,5 +1,17 @@
-import React from 'react'
+import { LocationProps } from "../interfaces/Location";
 
-export default function Location() {
-  return <div>Location component</div>
+export default function Location({ citadelName, locationData }: LocationProps) {
+  const continent = locationData.continent;
+  const latitude = locationData.coordinates.latitude;
+  const longitude = locationData.coordinates.longitude;
+
+  return (
+    <>
+      <h1>{citadelName}</h1>
+      <h2>Continent: {continent}</h2>
+      <h2>
+        Coordinates: {latitude}°, {longitude}°
+      </h2>
+    </>
+  );
 }

@@ -15,4 +15,9 @@ interface Landmark {
   distance: number;
 }
 
-export default Location;
+interface LocationProps {
+  citadelName: string;
+  locationData: Location;
+}
+
+export type { Location, LocationProps };

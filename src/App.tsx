@@ -26,7 +26,7 @@ function App() {
         setActiveSection={setActiveSection}
       />
 
-      <Main activeSection={activeSection} />
+      <Main citadelData={citadelData} activeSection={activeSection} />
     </>
   );
 }

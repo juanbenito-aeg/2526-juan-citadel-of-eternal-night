@@ -15,7 +15,7 @@ function Navigation({
   }
 
   return (
-    <nav>
+    <nav className="mb-8">
       <ul className="flex justify-evenly bg-blue-300">
         {relevantCitadelDataKeys.map((relevantCitadelDataKey, index) => {
           const navigationLinkTitle =

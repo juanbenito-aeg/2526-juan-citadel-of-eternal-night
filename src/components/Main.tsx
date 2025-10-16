@@ -6,12 +6,17 @@ import Inhabitants from "./Inhabitants";
 import Location from "./Location";
 import Resources from "./Resources";
 
-function Main({ activeSection }: MainProps) {
+function Main({ citadelData, activeSection }: MainProps) {
   let content;
 
   switch (activeSection) {
     case Section.LOCATION: {
-      content = <Location />;
+      content = (
+        <Location
+          citadelName={citadelData.name}
+          locationData={citadelData.location}
+        />
+      );
       break;
     }
 
@@ -36,7 +41,9 @@ function Main({ activeSection }: MainProps) {
     }
   }
 
-  return content;
+  return (
+    <main className="t mx-auto max-w-6xl border text-center">{content}</main>
+  );
 }
 
 export default Main;
