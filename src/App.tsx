@@ -1,12 +1,20 @@
-import React from 'react'
+import { useEffect, useState } from "react";
+import CitadelData from "./interfaces/CitadelData";
 
 function App() {
-  return (
-    <div>
-      <h1>Citadel of Eternal Night</h1>
-      <p>Construye aquí la interfaz y lógica de la ciudadela.</p>
-    </div>
-  )
+  const [citadelData, setCitadelData] = useState<CitadelData | null>(null);
+
+  useEffect(() => {
+    (async () => {
+      const url = "../public/citadel.json";
+      const response = await fetch(url);
+
+      const citadelData = await response.json();
+      setCitadelData(citadelData);
+    })();
+  }, []);
+
+  return <div></div>;
 }
 
-export default App
+export default App;
