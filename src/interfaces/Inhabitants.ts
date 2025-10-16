@@ -23,4 +23,4 @@ interface Profession {
   count: number;
 }
 
-export default Inhabitants;
+export type { Inhabitants };

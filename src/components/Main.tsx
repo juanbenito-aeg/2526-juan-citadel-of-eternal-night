@@ -31,7 +31,7 @@ function Main({ citadelData, activeSection }: MainProps) {
     }
 
     case Section.INHABITANTS: {
-      content = <Inhabitants />;
+      content = <Inhabitants roles={citadelData.inhabitants.roles} />;
       break;
     }
 

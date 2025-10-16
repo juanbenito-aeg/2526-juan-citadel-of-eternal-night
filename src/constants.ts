@@ -14,4 +14,10 @@ enum LandmarkType {
 
 const MAX_AMMUNITION_COUNT = 1000;
 
-export { Section, LandmarkType, MAX_AMMUNITION_COUNT };
+enum InhabitantRole {
+  SOLDIER = "Soldier",
+  MAGE = "Mage",
+  VILLAGER = "Villager",
+}
+
+export { Section, LandmarkType, MAX_AMMUNITION_COUNT, InhabitantRole };
