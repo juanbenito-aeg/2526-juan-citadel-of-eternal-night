@@ -31,7 +31,8 @@ function RoleData({ isActive, setActiveRole, data }: RoleDataProps) {
         return (
           <li key={index}>
             <p>
-              {capitalize(equipmentType)}: {data.equipment![equipmentType]}
+              {capitalize(equipmentType)}:{" "}
+              {(data.equipment! as any)[equipmentType]}
             </p>
           </li>
         );

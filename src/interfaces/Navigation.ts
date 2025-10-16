@@ -1,17 +1,17 @@
+import { Dispatch, SetStateAction } from "react";
 import { Section } from "../constants";
-import { SetActiveSection } from "./App";
 import CitadelData from "./CitadelData";
 
 interface NavigationProps {
   citadelData: CitadelData;
   activeSection: Section;
-  setActiveSection: SetActiveSection;
+  setActiveSection: Dispatch<SetStateAction<Section>>;
 }
 
 interface NavigationLinkProps {
   title: string;
   activeSection: Section;
-  setActiveSection: SetActiveSection;
+  setActiveSection: Dispatch<SetStateAction<Section>>;
 }
 
 export type { NavigationProps, NavigationLinkProps };

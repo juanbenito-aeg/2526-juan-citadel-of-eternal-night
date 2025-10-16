@@ -14,7 +14,7 @@ function Armory({ armory }: ArmoryProps) {
             <Equipment
               key={index}
               type={equipmentType}
-              list={armory[equipmentType]}
+              list={(armory as any)[equipmentType]}
             />
           );
         })}
