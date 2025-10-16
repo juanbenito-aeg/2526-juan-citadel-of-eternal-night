@@ -1,4 +1,5 @@
 import { History as HistoryProps } from "../../interfaces/History";
+import EventYearsDropdown from "./EventYearsDropdown";
 
 export default function History({ founded, majorEvents }: HistoryProps) {
   return (
@@ -8,6 +9,8 @@ export default function History({ founded, majorEvents }: HistoryProps) {
       <p>
         Founded in {founded.year} by {founded.by}
       </p>
+
+      <EventYearsDropdown majorEvents={majorEvents} />
     </>
   );
 }

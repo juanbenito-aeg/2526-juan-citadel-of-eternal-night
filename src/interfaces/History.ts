@@ -15,4 +15,8 @@ interface MajorEvent {
   description: string;
 }
 
-export type { History };
+interface EventYearsDropdown {
+  majorEvents: MajorEvent[];
+}
+
+export type { History, EventYearsDropdown };
