@@ -21,7 +21,12 @@ function Main({ citadelData, activeSection }: MainProps) {
     }
 
     case Section.DEFENSES: {
-      content = <Defenses />;
+      content = (
+        <Defenses
+          walls={citadelData.defenses.walls}
+          towers={citadelData.defenses.towers}
+        />
+      );
       break;
     }
 

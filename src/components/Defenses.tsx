@@ -1,5 +1,14 @@
-import React from 'react'
+import DefensesProps from "../interfaces/Defenses";
 
-export default function Defenses() {
-  return <div>Defenses component</div>
+export default function Defenses({ walls, towers }: DefensesProps) {
+  return (
+    <>
+      <h2>Citadel Defenses</h2>
+
+      <h3>Walls</h3>
+
+      <p>Material: {walls.material}</p>
+      <p>Height: {walls.height} m</p>
+    </>
+  );
 }
