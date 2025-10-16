@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import { InhabitantRole } from "../constants";
 
 interface Inhabitants {
@@ -25,17 +26,15 @@ interface Profession {
   count: number;
 }
 
-type SetActiveRole = (activeRole: InhabitantRole | string) => void;
-
 interface RolesListProps {
   roles: Role[];
   activeRole: InhabitantRole | null;
-  setActiveRole: SetActiveRole;
+  setActiveRole: any;
 }
 
 interface RoleDataProps {
   isActive: boolean;
-  setActiveRole: SetActiveRole;
+  setActiveRole: Dispatch<SetStateAction<InhabitantRole | null | string>>;
   data: Role;
 }
 
