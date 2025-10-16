@@ -36,7 +36,12 @@ function Main({ citadelData, activeSection }: MainProps) {
     }
 
     case Section.RESOURCES: {
-      content = <Resources />;
+      content = (
+        <Resources
+          storage={citadelData.resources.storage}
+          armory={citadelData.resources.armory}
+        />
+      );
       break;
     }
 

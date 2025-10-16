@@ -2,7 +2,7 @@ import { Defenses } from "./Defenses";
 import History from "./History";
 import Inhabitants from "./Inhabitants";
 import { Location } from "./Location";
-import Resources from "./Resources";
+import { Resources } from "./Resources";
 
 interface CitadelData {
   name: string;

@@ -30,4 +30,13 @@ interface Equipment {
   quantity: number;
 }
 
-export default Resources;
+interface ArmoryProps {
+  armory: Armory;
+}
+
+interface EquipmentProps {
+  type: string;
+  list: Equipment[];
+}
+
+export type { Resources, Storage, ArmoryProps, EquipmentProps };
