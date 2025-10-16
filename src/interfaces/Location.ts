@@ -20,4 +20,8 @@ interface LocationProps {
   locationData: Location;
 }
 
-export type { Location, LocationProps };
+interface LandmarksProps {
+  landmarks: Landmark[];
+}
+
+export type { Location, LocationProps, Landmark, LandmarksProps };

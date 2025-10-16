@@ -6,4 +6,10 @@ enum Section {
   HISTORY = "History",
 }
 
-export { Section };
+enum LandmarkType {
+  CAVE = "Cave",
+  RUINS = "Ruins",
+  TOWN = "Town",
+}
+
+export { Section, LandmarkType };
