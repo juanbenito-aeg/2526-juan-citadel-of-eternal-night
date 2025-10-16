@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import CitadelData from "./interfaces/CitadelData";
+import Navigation from "./components/Navigation";
+import { Section } from "./constants";
 
 function App() {
   const [citadelData, setCitadelData] = useState<CitadelData | null>(null);
+  const [activeSection, setActiveSection] = useState<Section>(Section.LOCATION);
 
   useEffect(() => {
     (async () => {
@@ -14,7 +17,15 @@ function App() {
     })();
   }, []);
 
-  return <div></div>;
+  return (
+    <>
+      <Navigation
+        citadelData={citadelData}
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+      />
+    </>
+  );
 }
 
 export default App;
