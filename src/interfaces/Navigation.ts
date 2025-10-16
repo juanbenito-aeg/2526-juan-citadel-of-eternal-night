@@ -3,7 +3,7 @@ import { SetActiveSection } from "./App";
 import CitadelData from "./CitadelData";
 
 interface NavigationProps {
-  citadelData: CitadelData | null;
+  citadelData: CitadelData;
   activeSection: Section;
   setActiveSection: SetActiveSection;
 }

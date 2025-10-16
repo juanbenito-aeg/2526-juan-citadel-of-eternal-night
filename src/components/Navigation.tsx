@@ -6,13 +6,9 @@ function Navigation({
   activeSection,
   setActiveSection,
 }: NavigationProps) {
-  let relevantCitadelDataKeys: string[] = [];
-
-  if (citadelData !== null) {
-    relevantCitadelDataKeys = Object.keys(citadelData!).filter(
-      (citadelDataKey) => citadelDataKey !== "name",
-    );
-  }
+  const relevantCitadelDataKeys: string[] = Object.keys(citadelData!).filter(
+    (citadelDataKey) => citadelDataKey !== "name",
+  );
 
   return (
     <nav className="mb-8">

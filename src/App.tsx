@@ -18,6 +18,8 @@ function App() {
     })();
   }, []);
 
+  if (citadelData === null) return null;
+
   return (
     <>
       <Navigation
