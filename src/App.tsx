@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const url = "../public/citadel.json";
+      const url = "/citadel.json";
       const response = await fetch(url);
 
       const citadelData = await response.json();
