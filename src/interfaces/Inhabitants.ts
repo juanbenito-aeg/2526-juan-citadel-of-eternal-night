@@ -25,13 +25,17 @@ interface Profession {
   count: number;
 }
 
+type SetActiveRole = (activeRole: InhabitantRole) => void;
+
 interface RolesListProps {
   roles: Role[];
   activeRole: InhabitantRole | null;
+  setActiveRole: SetActiveRole;
 }
 
 interface RoleDataProps {
   isActive: boolean;
+  setActiveRole: SetActiveRole;
   data: Role;
 }
 

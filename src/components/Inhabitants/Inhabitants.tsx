@@ -34,7 +34,11 @@ export default function Inhabitants({ roles }: InhabitantsProps) {
 
       <p>Total Population: {totalPopulation}</p>
 
-      <RolesList roles={roles} activeRole={activeRole} />
+      <RolesList
+        roles={roles}
+        activeRole={activeRole}
+        setActiveRole={setActiveRole}
+      />
     </>
   );
 }

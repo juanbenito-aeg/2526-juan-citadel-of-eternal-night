@@ -1,7 +1,7 @@
 import { RolesListProps } from "../../interfaces/Inhabitants";
 import RoleData from "./RoleData";
 
-function RolesList({ roles, activeRole }: RolesListProps) {
+function RolesList({ roles, activeRole, setActiveRole }: RolesListProps) {
   return (
     <div className="flex flex-col gap-y-1">
       {roles.map((role, index) => {
@@ -9,7 +9,14 @@ function RolesList({ roles, activeRole }: RolesListProps) {
 
         const isActive = currentRole === activeRole;
 
-        return <RoleData key={index} isActive={isActive} data={role} />;
+        return (
+          <RoleData
+            key={index}
+            isActive={isActive}
+            setActiveRole={setActiveRole}
+            data={role}
+          />
+        );
       })}
     </div>
   );
