@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CitadelData from "./interfaces/CitadelData";
 import Navigation from "./components/Navigation";
 import { Section } from "./constants";
+import Main from "./components/Main";
 
 function App() {
   const [citadelData, setCitadelData] = useState<CitadelData | null>(null);
@@ -24,6 +25,8 @@ function App() {
         activeSection={activeSection}
         setActiveSection={setActiveSection}
       />
+
+      <Main activeSection={activeSection} />
     </>
   );
 }
