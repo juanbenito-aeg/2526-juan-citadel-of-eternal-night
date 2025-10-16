@@ -11,7 +11,7 @@ interface NavigationProps {
 interface NavigationLinkProps {
   title: string;
   activeSection: Section;
-  setActiveSection: Dispatch<SetStateAction<Section>>;
+  setActiveSection: any;
 }
 
 export type { NavigationProps, NavigationLinkProps };
