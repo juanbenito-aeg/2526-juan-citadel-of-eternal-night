@@ -1,5 +1,6 @@
 import { Defenses as DefensesProps } from "../interfaces/Defenses";
 import Enchantments from "./Enchantments";
+import Towers from "./Towers";
 
 export default function Defenses({ walls, towers }: DefensesProps) {
   return (
@@ -12,6 +13,8 @@ export default function Defenses({ walls, towers }: DefensesProps) {
       <p>Height: {walls.height} m</p>
 
       <Enchantments enchantments={walls.enchantments} />
+
+      <Towers towers={towers} />
     </>
   );
 }

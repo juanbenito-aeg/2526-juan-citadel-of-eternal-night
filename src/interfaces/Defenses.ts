@@ -36,4 +36,8 @@ interface EnchantmentsProps {
   enchantments: Enchantment[];
 }
 
-export type { Defenses, Enchantment, EnchantmentsProps };
+interface TowersProps {
+  towers: Tower[];
+}
+
+export type { Defenses, Enchantment, Tower, EnchantmentsProps, TowersProps };
