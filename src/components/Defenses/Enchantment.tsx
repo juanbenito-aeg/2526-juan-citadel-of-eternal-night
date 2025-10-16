@@ -1,4 +1,4 @@
-import { Enchantment as EnchantmentProps } from "../interfaces/Defenses";
+import { Enchantment as EnchantmentProps } from "../../interfaces/Defenses";
 
 function Enchantment({ name, level }: EnchantmentProps) {
   return (

@@ -1,4 +1,4 @@
-import { Tower as TowerProps } from "../interfaces/Defenses";
+import { Tower as TowerProps } from "../../interfaces/Defenses";
 import Armament from "./Armament";
 import Guards from "./Guards";
 

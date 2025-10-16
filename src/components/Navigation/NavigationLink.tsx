@@ -1,4 +1,4 @@
-import { NavigationLinkProps } from "../interfaces/Navigation";
+import { NavigationLinkProps } from "../../interfaces/Navigation";
 
 function NavigationLink({
   title,

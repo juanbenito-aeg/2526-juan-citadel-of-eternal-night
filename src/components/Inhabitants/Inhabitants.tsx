@@ -1,5 +1,5 @@
-import { Inhabitants as InhabitantsProps } from "../interfaces/Inhabitants";
-import { InhabitantRole } from "../constants";
+import { Inhabitants as InhabitantsProps } from "../../interfaces/Inhabitants";
+import { InhabitantRole } from "../../constants";
 import { useState } from "react";
 import RolesList from "./RolesList";
 

@@ -1,10 +1,10 @@
 import { Section } from "../constants";
 import { MainProps } from "../interfaces/Main";
-import Defenses from "./Defenses";
-import History from "./History";
-import Inhabitants from "./Inhabitants";
-import Location from "./Location";
-import Resources from "./Resources";
+import Defenses from "./Defenses/Defenses";
+import History from "./History/History";
+import Inhabitants from "./Inhabitants/Inhabitants";
+import Location from "./Location/Location";
+import Resources from "./Resources/Resources";
 
 function Main({ citadelData, activeSection }: MainProps) {
   let content;

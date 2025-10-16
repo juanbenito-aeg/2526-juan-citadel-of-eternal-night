@@ -1,4 +1,4 @@
-import { RoleDataProps } from "../interfaces/Inhabitants";
+import { RoleDataProps } from "../../interfaces/Inhabitants";
 
 function RoleData({ isActive, data }: RoleDataProps) {
   return (

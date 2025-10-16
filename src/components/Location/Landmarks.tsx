@@ -1,5 +1,5 @@
 import Landmark from "./Landmark";
-import { LandmarksProps } from "../interfaces/Location";
+import { LandmarksProps } from "../../interfaces/Location";
 
 function Landmarks({ landmarks }: LandmarksProps) {
   landmarks.sort(

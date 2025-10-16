@@ -1,4 +1,4 @@
-import { Storage as StorageProps } from "../interfaces/Resources";
+import { Storage as StorageProps } from "../../interfaces/Resources";
 
 function Storage({ food, water }: StorageProps) {
   return (

@@ -1,4 +1,4 @@
-import { GuardsProps } from "../interfaces/Defenses";
+import { GuardsProps } from "../../interfaces/Defenses";
 
 function Guards({ guards }: GuardsProps) {
   return (

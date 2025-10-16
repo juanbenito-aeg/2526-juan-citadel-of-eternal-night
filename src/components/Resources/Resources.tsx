@@ -1,4 +1,4 @@
-import { Resources as ResourcesProps } from "../interfaces/Resources";
+import { Resources as ResourcesProps } from "../../interfaces/Resources";
 import Armory from "./Armory";
 import Storage from "./Storage";
 

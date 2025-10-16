@@ -1,5 +1,5 @@
-import { MAX_AMMUNITION_COUNT } from "../constants";
-import { Armament as ArmamentProps } from "../interfaces/Defenses";
+import { MAX_AMMUNITION_COUNT } from "../../constants";
+import { Armament as ArmamentProps } from "../../interfaces/Defenses";
 
 function Armament({
   weaponType,

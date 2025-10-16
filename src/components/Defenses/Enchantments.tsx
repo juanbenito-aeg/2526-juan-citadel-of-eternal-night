@@ -1,4 +1,4 @@
-import { EnchantmentsProps } from "../interfaces/Defenses";
+import { EnchantmentsProps } from "../../interfaces/Defenses";
 import Enchantment from "./Enchantment";
 
 function Enchantments({ enchantments }: EnchantmentsProps) {

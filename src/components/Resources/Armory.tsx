@@ -1,4 +1,4 @@
-import { ArmoryProps } from "../interfaces/Resources";
+import { ArmoryProps } from "../../interfaces/Resources";
 import Equipment from "./Equipment";
 
 function Armory({ armory }: ArmoryProps) {

@@ -1,5 +1,5 @@
-import { EquipmentProps } from "../interfaces/Resources";
-import { capitalize } from "../utils";
+import { EquipmentProps } from "../../interfaces/Resources";
+import { capitalize } from "../../utils";
 
 function Equipment({ type, list }: EquipmentProps) {
   const capitalizedType = capitalize(type);

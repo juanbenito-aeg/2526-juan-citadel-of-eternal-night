@@ -1,5 +1,5 @@
-import { LandmarkType } from "../constants";
-import { Landmark as LandmarkProps } from "../interfaces/Location";
+import { LandmarkType } from "../../constants";
+import { Landmark as LandmarkProps } from "../../interfaces/Location";
 
 function Landmark({ name, type, distance }: LandmarkProps) {
   let nameColor: string = "";

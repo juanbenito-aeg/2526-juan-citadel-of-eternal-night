@@ -1,4 +1,4 @@
-import { Defenses as DefensesProps } from "../interfaces/Defenses";
+import { Defenses as DefensesProps } from "../../interfaces/Defenses";
 import Enchantments from "./Enchantments";
 import Towers from "./Towers";
 

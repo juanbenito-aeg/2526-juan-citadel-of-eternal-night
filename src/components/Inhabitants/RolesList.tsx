@@ -1,4 +1,4 @@
-import { RolesListProps } from "../interfaces/Inhabitants";
+import { RolesListProps } from "../../interfaces/Inhabitants";
 import RoleData from "./RoleData";
 
 function RolesList({ roles, activeRole }: RolesListProps) {

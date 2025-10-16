@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CitadelData from "./interfaces/CitadelData";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 import { Section } from "./constants";
 import Main from "./components/Main";
 

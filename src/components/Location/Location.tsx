@@ -1,4 +1,4 @@
-import { LocationProps } from "../interfaces/Location";
+import { LocationProps } from "../../interfaces/Location";
 import Landmarks from "./Landmarks";
 
 export default function Location({ citadelName, locationData }: LocationProps) {

@@ -1,4 +1,4 @@
-import { TowersProps } from "../interfaces/Defenses";
+import { TowersProps } from "../../interfaces/Defenses";
 import Tower from "./Tower";
 
 function Towers({ towers }: TowersProps) {
