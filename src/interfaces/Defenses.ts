@@ -32,4 +32,8 @@ interface Guard {
   rank: string;
 }
 
-export default Defenses;
+interface EnchantmentsProps {
+  enchantments: Enchantment[];
+}
+
+export type { Defenses, Enchantment, EnchantmentsProps };

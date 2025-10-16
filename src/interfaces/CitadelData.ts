@@ -1,4 +1,4 @@
-import Defenses from "./Defenses";
+import { Defenses } from "./Defenses";
 import History from "./History";
 import Inhabitants from "./Inhabitants";
 import { Location } from "./Location";
