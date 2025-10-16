@@ -1,7 +1,11 @@
 import { Inhabitants as InhabitantsProps } from "../interfaces/Inhabitants";
 import { InhabitantRole } from "../constants";
+import { useState } from "react";
+import RolesList from "./RolesList";
 
 export default function Inhabitants({ roles }: InhabitantsProps) {
+  const [activeRole, setActiveRole] = useState<InhabitantRole | null>(null);
+
   const totalPopulation: number = getTotalPopulation();
 
   function getTotalPopulation(): number {
@@ -29,6 +33,8 @@ export default function Inhabitants({ roles }: InhabitantsProps) {
       <h2>Inhabitants</h2>
 
       <p>Total Population: {totalPopulation}</p>
+
+      <RolesList roles={roles} activeRole={activeRole} />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import { InhabitantRole } from "../constants";
+
 interface Inhabitants {
   roles: Role[];
 }
@@ -23,4 +25,14 @@ interface Profession {
   count: number;
 }
 
-export type { Inhabitants };
+interface RolesListProps {
+  roles: Role[];
+  activeRole: InhabitantRole | null;
+}
+
+interface RoleDataProps {
+  isActive: boolean;
+  data: Role;
+}
+
+export type { Inhabitants, RolesListProps, RoleDataProps };
