@@ -12,4 +12,6 @@ enum LandmarkType {
   TOWN = "Town",
 }
 
-export { Section, LandmarkType };
+const MAX_AMMUNITION_COUNT = 1000;
+
+export { Section, LandmarkType, MAX_AMMUNITION_COUNT };
